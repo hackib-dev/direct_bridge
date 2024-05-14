@@ -20,6 +20,7 @@ import Logo from "./images/index/logo.svg";
 import LpoImage from "./images/index/lpo-image.svg";
 import Line from "./images/index/line.svg";
 import EuroBg from "./images/index/Euro-bg.svg";
+import EuroSymbol from "./images/index/Euro-symbol.svg";
 
 export {
   AssetImage,
@@ -44,4 +45,5 @@ export {
   LpoImage,
   Line,
   EuroBg,
+  EuroSymbol,
 };

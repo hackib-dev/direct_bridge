@@ -6,7 +6,7 @@ import {
   ImageOne,
   ImageTwo,
   ImageThree,
-  EurosIcon,
+  EuroSymbol,
   GameIcon,
   EuroBg,
 } from "../../../assets";
@@ -71,6 +71,11 @@ const SectionOne = () => {
             style={{
               transform: `rotate(${activeImageIndex * 90}deg)`,
             }}
+          />
+          <Image
+            src={EuroSymbol}
+            alt="Euros"
+            className="absolute z-40 mt-[68px] ml-2 md:ml-14 md:mt-2 md:w-fit w-[20px]"
           />
 
           <Image
