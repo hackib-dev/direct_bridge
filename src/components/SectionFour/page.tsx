@@ -7,7 +7,7 @@ import { AssetImage } from "../../../assets";
 
 const SectionFour = () => {
   return (
-    <div className="mt-10 bg-primary bg-cover bg-no-repeat bg-[url('../../assets/images/index/bg-image.png')] p-5 md:px-20 md:py-16">
+    <div className="mt-10 bg-primary bg-cover bg-no-repeat bg-[url('../../assets/images/index/bg-image.png')] px-5 py-12 md:px-20 md:py-16">
       <div className="mb-12">
         <h1 className="mx-auto text-4xl text-white text-center font-medium w-full md:w-[600px] mb-2">
           Explore our range of loan products designed with you in mind
