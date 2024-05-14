@@ -29,7 +29,7 @@ const Reviews = () => {
   return (
     <div className="px-5 md:px-20">
       <div className="my-5 md:my-20">
-        <h1 className="mx-auto text-4xl text-left md:text-center font-medium w-full md:w-[500px] mb-3">
+        <h1 className="mx-auto text-3xl md:text-4xl text-left md:text-center font-medium w-full md:w-[500px] mb-3">
           Our users tell beautiful stories about us
         </h1>
         <p className="text-left md:text-center text-[#595959] md:px-40">
