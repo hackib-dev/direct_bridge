@@ -78,21 +78,24 @@ const SectionOne = () => {
             className="absolute z-40 mt-[68px] ml-2 md:ml-14 md:mt-2 md:w-fit w-[20px]"
           />
 
-          <Image
-            src={images[activeImageIndex]}
-            width={470}
-            alt={`Image ${activeImageIndex + 1}`}
-            className={`relative top-20 md:top-5 left-0 md:left-20 z-20 rounded-3xl border-[#395CF5] border-2  transition-opacity duration-1500 ${
-              fade ? "opacity-0" : "opacity-100"
-            } `}
-          />
+          <div className="relative">
+            <Image
+              src={images[activeImageIndex]}
+              width={470}
+              alt={`Image ${activeImageIndex + 1}`}
+              className={`relative top-20 md:top-5 left-0 md:left-20 z-20 rounded-3xl border-[#395CF5] border-2  transition-opacity duration-1500 ${
+                fade ? "opacity-0" : "opacity-100"
+              } `}
+            />
+
+            <Image
+              src={GameIcon}
+              width={100}
+              alt="Game Icon"
+              className="hidden md:block absolute -bottom-[120px] -right-20 z-40 w-32"
+            />
+          </div>
         </div>
-        <Image
-          src={GameIcon}
-          width={100}
-          alt="Game Icon"
-          className="hidden md:block absolute -bottom-24 right-0 z-40 w-32"
-        />
       </div>
     </div>
   );

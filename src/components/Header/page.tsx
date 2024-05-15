@@ -51,6 +51,7 @@ const Header = () => {
       <div className="px-4 py-3 sm:px-20 sm:py-7 flex items-center shadow-sm fixed top-0 z-50 bg-white w-full justify-between">
         <div className="flex items-center">
           <Image src={Logo} height={20} width={20} alt={"Logo"} />
+
           <h1 className="text-lg ml-2 font-medium">Direct Bridge Limited</h1>
         </div>
         <div className="hidden md:flex gap-5">

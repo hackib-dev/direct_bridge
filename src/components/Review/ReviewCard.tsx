@@ -13,7 +13,7 @@ const ReviewCard = ({ review, name, position, image }: ReviewCardProps) => {
       <div className="">
         <p>{review}</p>
       </div>
-      <div className="flex mt-7">
+      <div className="flex mt-3">
         {image && (
           <div>
             <Image src={image} alt="reviews" />
