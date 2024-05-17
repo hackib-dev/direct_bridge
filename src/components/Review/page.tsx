@@ -18,7 +18,8 @@ const generateReviewCards = (count: number, animateClass: string) => {
   }
   return (
     <div
-      className={`flex animate-${animateClass} absolute left-0 top-0 md:gap-3 h-full w-full`}
+      style={{ animation: `${animateClass} 15s linear infinite;` }}
+      className={`flex absolute left-0 top-0 gap-3 h-full w-full`}
     >
       {reviewCards}
     </div>
@@ -26,6 +27,9 @@ const generateReviewCards = (count: number, animateClass: string) => {
 };
 
 const Reviews = () => {
+  // const animation =
+  //   "animate-primary animate-secondary animate-primary_right animate-secondary_right";
+
   return (
     <div className="px-5 md:px-20">
       <div className="my-5 md:my-20">
@@ -39,11 +43,11 @@ const Reviews = () => {
         </p>
       </div>
       <div className="">
-        <div className=" w-[1400px] h-[200px] relative ">
+        <div className=" w-[1500px] h-[200px] relative ">
           {generateReviewCards(3, "primary")}
           {generateReviewCards(3, "secondary")}
         </div>
-        <div className=" w-[1400px] h-[200px] relative ">
+        <div className=" w-[1500px] h-[200px] relative ">
           {generateReviewCards(3, "primary_right")}
           {generateReviewCards(3, "secondary_right")}
         </div>
