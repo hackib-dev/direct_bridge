@@ -119,10 +119,6 @@
   }
 }
 
-.animate-primary {
-  animation: primary 15s linear infinite;
-}
-
 @keyframes primary_right {
   from {
     transform: translateX(-100%);
@@ -131,10 +127,6 @@
   to {
     transform: translateX(0);
   }
-}
-
-.animate-primary_right {
-  animation: primary_right 15s linear infinite;
 }
 
 @keyframes secondary {
@@ -147,10 +139,6 @@
   }
 }
 
-.animate-secondary {
-  animation: secondary 15s linear infinite;
-}
-
 @keyframes secondary_right {
   from {
     transform: translateX(0);
@@ -159,8 +147,4 @@
   to {
     transform: translateX(100%);
   }
-}
-
-.animate-secondary_right {
-  animation: secondary_right 15s linear infinite;
 }

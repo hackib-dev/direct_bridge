@@ -60,9 +60,7 @@ const config = {
         "2000": "2000ms",
         "1500": "1500ms",
       },
-      animation: {
-        "-slow": "spin 3s linear infinite",
-      },
+
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
@@ -80,6 +78,47 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        primary: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(-100%)",
+          },
+        },
+        secondary: {
+          from: {
+            transform: "translateX(100%)",
+          },
+          to: {
+            transform: "translateX(0)",
+          },
+        },
+        primary_right: {
+          from: {
+            transform: "translateX(-100%)",
+          },
+          to: {
+            transform: "translateX(0)",
+          },
+        },
+        secondary_right: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(100%)",
+          },
+        },
+      },
+      animation: {
+        "-slow": "spin 3s linear infinite",
+        "accordion-down": "accordion-down 0.6s ease-out",
+        "accordion-up": "accordion-up 0.6s ease-out",
+        primary: "primary 15s linear infinite",
+        secondary: "secondary 15s linear infinite",
+        primary_right: "primary_right 15s linear infinite",
+        secondary_right: "secondary_right 15s linear infinite",
       },
     },
   },

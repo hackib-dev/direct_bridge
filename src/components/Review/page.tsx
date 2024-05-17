@@ -18,7 +18,7 @@ const generateReviewCards = (count: number, animateClass: string) => {
   }
   return (
     <div
-      className={`flex gap-3 animate-${animateClass} justify-around md:absolute left-0 top-0 h-full w-full`}
+      className={`flex animate-${animateClass} absolute left-0 top-0 md:gap-3 h-full w-full`}
     >
       {reviewCards}
     </div>
@@ -38,22 +38,12 @@ const Reviews = () => {
           management tools and many more.
         </p>
       </div>
-      <div className="md:block hidden">
-        <div className="flex w-fit md:w-[1500px] gap-3 h-fit md:h-[200px] md:relative my-10">
+      <div className="">
+        <div className=" w-[1400px] h-[200px] relative ">
           {generateReviewCards(3, "primary")}
           {generateReviewCards(3, "secondary")}
         </div>
-        <div className="flex w-fit md:w-[1500px] gap-3 h-fit md:h-[200px] md:relative my-10">
-          {generateReviewCards(3, "primary_right")}
-          {generateReviewCards(3, "secondary_right")}
-        </div>
-      </div>
-      <div className="md:hidden block">
-        <div className="flex w-[2500px] gap-3   ">
-          {generateReviewCards(3, "primary")}
-          {generateReviewCards(3, "secondary")}
-        </div>
-        <div className="flex w-[2500px] gap-3  my-10">
+        <div className=" w-[1400px] h-[200px] relative ">
           {generateReviewCards(3, "primary_right")}
           {generateReviewCards(3, "secondary_right")}
         </div>
