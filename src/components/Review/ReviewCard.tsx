@@ -9,7 +9,7 @@ interface ReviewCardProps {
 
 const ReviewCard = ({ review, name, position, image }: ReviewCardProps) => {
   return (
-    <div className="mt-4 w-fit md:w-[450px] text-sm flex flex-col border border-primary rounded-lg py-3 md:py-6 px-3 md:px-7">
+    <div className="mt-4 w-[488px] text-sm flex flex-col border border-primary rounded-lg py-3 md:py-6 px-3 md:px-7">
       <div className="">
         <p>{review}</p>
       </div>
